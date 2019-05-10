@@ -5,7 +5,7 @@ II. Method: Install script to local admin directory in a specific location, crea
 
 A. Variables: SCRIPT, LOGFILE, NOW, WHO, ADMIN, CURREN(year/day/month), DUE(year/day/month), SIZE, MAXSIZE
 
-B. Used: Cat <eof>> to write file to location by script
+B. Used: Cat <<eof> to write file to location by script
   
 III. Script Outline: Set Variables, Logfile, Maxsize of script, Check date is greater than or equal to Due date, Confirm user, Delete Account, Archive data
 

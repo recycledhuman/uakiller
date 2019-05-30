@@ -74,7 +74,7 @@ if [ "$WHO" = "$ADMIN" ]
 		echo "User is not Admin - Proceed" >> /var/log/"$LOGFILE"
 fi
 
-#Delete user account and archive home directory
-sudo dscl . delete /Users/$WHO
-echo "Deleting Account $WHO" >> /var/log/"$LOGFILE"
+#Run script to change password
+source /Users/<Local Admin name here>/Desktop/Scripts/resetpassword.sh
+echo "Changing Password for $WHO" >> /var/log/"$LOGFILE"
 exit 0

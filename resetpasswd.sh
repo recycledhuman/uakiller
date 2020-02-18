@@ -1,6 +1,8 @@
-#!/usr/bin/expect
+#!/bin/bash
 
-spawn dscl . -passwd /Users/$WHO
-expect New Password:
-send <New password here>\r
-interact
+expect<<END
+	spawn dscl . -passwd /Users/$WHO
+	expect "New Password:"
+	send <New Password Here>\r
+	expect eof
+END

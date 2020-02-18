@@ -1,5 +1,5 @@
 # uakiller
-I. Purpose: Management software solution to delete account of standard user, archive home directory of user. To be performed on or after a specific date. To trigger without wifi on a recurring timer.
+I. Purpose: Management software solution to lock standard user account by changing password. To be performed on or after a specific date. To trigger without wifi on a recurring timer.
 
 II. Method: Install script to local admin directory in a specific location, create a plist in LaunchDaemon folder with a 15 minute timer
 
